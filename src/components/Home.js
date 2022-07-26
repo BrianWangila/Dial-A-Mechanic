@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Mechanics from "./Mechanics";
+import MechanicsCard from "./MechanicsCard";
 
 
 const DISPLAY_MECHANICS = "http://localhost:2000/mechanics"
@@ -17,15 +17,16 @@ export default function Home(){
   return (
     <div>
       <h1>Home</h1>
+
       {mechDetails.map((mechDetail) => {
-        console.log(mechDetail)
         return (
-          <Mechanics
+          <MechanicsCard
             key={mechDetail.id}
+            category={mechDetail.category}
             image={mechDetail.photo}
             name={mechDetail.contactInfo.name}
             shopName={mechDetail.shopName}
-            location={mechDetail.contactInfo.location}
+            location={mechDetail.location}
             rating={mechDetail.rating}
             price={mechDetail.avePriceRange}
           />

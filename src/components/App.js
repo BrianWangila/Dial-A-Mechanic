@@ -4,7 +4,7 @@ import Search from './Search';
 import AboutUs from './AboutUs';
 import OurWork from './OurWork';
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Mechanics from './Mechanics';
+import Mechanics from './MechanicsCard';
 
 function App() {
   return (
