@@ -23,7 +23,7 @@ export default function Home(){
           <Mechanics
             key={mechDetail.id}
             image={mechDetail.photo}
-            name={mechDetail.contact-info.name}
+            name={mechDetail.contactInfo.name}
             shopName={mechDetail.shopName}
             location={mechDetail.contactInfo.location}
             rating={mechDetail.rating}
