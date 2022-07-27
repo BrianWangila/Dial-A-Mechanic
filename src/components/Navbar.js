@@ -26,7 +26,7 @@ function Navbar(){
             </button>
             <ul className="dropdown-menu">
               <li className="nav-item">
-                <Link to="/mechanic/login" className="nav-link">Create Account</Link>
+                <Link to="/dad/login" className="nav-link">Create Account</Link>
               </li>
             </ul>
           </div>
