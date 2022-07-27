@@ -1,5 +1,5 @@
 {
-  "mechanics":[
+  "mechanics": [
     {
       "id": 1,
       "category": "Heavy Machinery",
@@ -9,13 +9,11 @@
       "rating": 4.5,
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus orci nec malesuada iaculis. Aenean bibendum nunc nisl, vitae mollis turpis gravida eget. Donec bibendum odio elementum, congue leo ac, fermentum leo. Mauris fringilla auctor odio non tempus. Praesent convallis nunc vel congue porta. Sed condimentum erat in orci feugiat, at iaculis erat volutpat. Ut vitae pharetra orci. In massa ligula, sodales nec vestibulum quis, rutrum et leo.",
       "photo": "https://media.istockphoto.com/photos/happy-black-auto-mechanic-working-at-car-workshop-and-looking-at-picture-id1289143731?k=20&m=1289143731&s=612x612&w=0&h=12DezHaSI7XrRudm4Exd5aDyidgB0k9-worzo5u8viw=",
-      "contactInfo": {
-        "name": "Moses Okumu",
-        "phone": "+254723456789",
-        "email": "okumu@info.com"
-      }
+      "name": "Moses Okumu",
+      "phone": "+254723456789",
+      "email": "okumu@info.com"
+      
     },
-
     {
       "id": 2,
       "category": "Break and Transmission",
@@ -25,29 +23,24 @@
       "rating": 4.2,
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus orci nec malesuada iaculis. Aenean bibendum nunc nisl, vitae mollis turpis gravida eget. Donec bibendum odio elementum, congue leo ac, fermentum leo. Mauris fringilla auctor odio non tempus. Praesent convallis nunc vel congue porta. Sed condimentum erat in orci feugiat, at iaculis erat volutpat. Ut vitae pharetra orci. In massa ligula, sodales nec vestibulum quis, rutrum et leo.",
       "photo": "https://upload.wikimedia.org/wikipedia/commons/6/68/Auto_Mechanic.jpg",
-      "contactInfo": {
-        "name": "Melvin Mogaka",
-        "phone": "+254734567891",
-        "email": "melvin@info.com"
-      }
+      "name": "Melvin Mogaka",
+      "phone": "+254734567891",
+      "email": "melvin@info.com"
+      
     },
-
     {
       "id": 3,
       "category": "Electrical Wiring",
       "shopName": "Stephen Car Electrical",
       "location": "Eldoret, Kenya",
       "experience": 3,
-      "rating": 4.0,
+      "rating": 4,
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus orci nec malesuada iaculis. Aenean bibendum nunc nisl, vitae mollis turpis gravida eget. Donec bibendum odio elementum, congue leo ac, fermentum leo. Mauris fringilla auctor odio non tempus. Praesent convallis nunc vel congue porta. Sed condimentum erat in orci feugiat, at iaculis erat volutpat. Ut vitae pharetra orci. In massa ligula, sodales nec vestibulum quis, rutrum et leo.",
       "photo": "https://www.floridacareercollege.edu/wp-content/uploads/sites/4/2020/06/3-Reasons-Why-Being-a-Mechanic-Could-Be-An-Amazing-Career-Florida-Career-College.jpeg",
-      "contactInfo": {
-        "name": "Stephen Kariuki",
-        "phone": "+254756789123",
-        "email": "stephen@info.com"
-      }
+      "name": "Stephen Kariuki",
+      "phone": "+254756789123",
+      "email": "stephen@info.com"
     },
-
     {
       "id": 4,
       "category": "Diesel Engine",
@@ -57,12 +50,61 @@
       "rating": 4.1,
       "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus orci nec malesuada iaculis. Aenean bibendum nunc nisl, vitae mollis turpis gravida eget. Donec bibendum odio elementum, congue leo ac, fermentum leo. Mauris fringilla auctor odio non tempus. Praesent convallis nunc vel congue porta. Sed condimentum erat in orci feugiat, at iaculis erat volutpat. Ut vitae pharetra orci. In massa ligula, sodales nec vestibulum quis, rutrum et leo.",
       "photo": "https://www.bls.gov/ooh/images/3010.jpg",
-      "contactInfo": {
-        "name": "Mildred Nafula",
-        "phone": "+254745678912",
-        "email": "mildred@info.com"
-      }
+      "name": "Mildred Nafula",
+      "phone": "+254745678912",
+      "email": "mildred@info.com"
+    },
+    {
+      "photo": "df",
+      "category": "Heavy Machinery",
+      "shopName": "rttrt",
+      "contactInfo.number": "343",
+      "contactInfo.name": "ere",
+      "contactInfo.email": "rer@gmail.com",
+      "about": "dfdfdf",
+      "experience": "4",
+      "location": "dfd",
+      "rating": "",
+      "id": 5
+    },
+    {
+      "photo": "df",
+      "category": "Heavy Machinery",
+      "shopName": "rttrt",
+      "contactInfo.number": "343",
+      "contactInfo.name": "ere",
+      "contactInfo.email": "rer@gmail.com",
+      "about": "dfdfdf",
+      "experience": "4",
+      "location": "dfd",
+      "rating": "",
+      "id": 6
+    },
+    {
+      "photo": "www.google.com",
+      "category": "Heavy Machinery",
+      "shopName": "Ravvy Shop",
+      "contactInfo.number": "254701453869",
+      "contactInfo.name": "John Doe",
+      "contactInfo.email": "johndoe@gmail.com",
+      "about": "lorem ipsum",
+      "experience": "6",
+      "location": "Eldoret",
+      "rating": "",
+      "id": 7
+    },
+    {
+      "photo": "",
+      "category": "Heavy Machinery",
+      "shopName": "",
+      "contactInfo.number": "",
+      "contactInfo.name": "",
+      "contactInfo.email": "",
+      "about": "fg",
+      "experience": "",
+      "location": "",
+      "rating": "",
+      "id": 8
     }
   ]
 }
-
