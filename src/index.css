@@ -17,3 +17,16 @@ code {
   margin-bottom: 2em;
 }
 
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://www.bankrate.com/2021/08/09163309/Roadside-assistance-vs-AAA.jpg?auto=webp&optimize=high&crop=16:9");
+  background-size: auto;
+
+}
+
+.flexbox img {
+  height: 50vh;
+  width: 90vw;
+  margin: 2vw;
+}

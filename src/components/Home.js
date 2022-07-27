@@ -11,7 +11,7 @@ export default function Home(){
     fetch(DISPLAY_MECHANICS)
     .then((resp) => resp.json())
     .then((mechanic) => setMechDetails(mechanic))
-  }, [mechDetails])
+  }, [])
 
   function handleAddSubmit(newData){
     setMechDetails(...mechDetails, newData)
@@ -20,7 +20,7 @@ export default function Home(){
 
   return (
     <center >
-      <h1>Home</h1>
+      <h2>Find A Mechanic in Seconds</h2>
       <div className="row">
         {mechDetails.map((mechDetail) => {
           return (

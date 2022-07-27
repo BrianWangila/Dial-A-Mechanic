@@ -5,7 +5,11 @@ function Navbar(){
 
   return(
     
-    <nav className="navbar bg-light">
+    <nav className="flexbox navbar bg-light">
+      <div className="">
+        <h1>Dial A Mechanic</h1>
+        {/* <img src="https://www.bankrate.com/2021/08/09163309/Roadside-assistance-vs-AAA.jpg?auto=webp&optimize=high&crop=16:9"/> */}
+      </div>
       <div className="container-fluid">
         <ul className="navbar-nav">
           <li className="nav-item">
@@ -30,8 +34,6 @@ function Navbar(){
               </li>
             </ul>
           </div>
-
-
         </ul>
       </div>
     </nav>
