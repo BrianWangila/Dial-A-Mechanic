@@ -20,6 +20,18 @@ function Navbar(){
           <li className="nav-item">
             <Link to="/search" className="nav-link">Search</Link>
           </li>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="">
+              Sign up
+            </button>
+            <ul class="dropdown-menu">
+              <li className="nav-item">
+                <Link to="/" className="nav-link">As A Mechanic</Link>
+              </li>
+            </ul>
+          </div>
+
+
         </ul>
       </div>
     </nav>

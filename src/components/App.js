@@ -4,7 +4,7 @@ import Search from './Search';
 import AboutUs from './AboutUs';
 import OurWork from './OurWork';
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Mechanics from './MechanicsCard';
+import MechanicDetails from './MechanicDetails';
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
         <Route exact path='/our-work' element={<OurWork/>}></Route>
         <Route exact path="/about-us" element={<AboutUs/>}></Route>
         <Route exact path="/search" element={<Search/>}></Route>
+        <Route exact path="/mechanic/:mechId" element={<MechanicDetails/>}></Route>
       </Routes>
     </Router>
 

@@ -15,24 +15,26 @@ export default function Home(){
   
 
   return (
-    <div>
+    <center >
       <h1>Home</h1>
+      <div className="row">
+        {mechDetails.map((mechDetail) => {
+          return (
+            <MechanicsCard
+              key={mechDetail.id}
+              category={mechDetail.category}
+              image={mechDetail.photo}
+              name={mechDetail.contactInfo.name}
+              shopName={mechDetail.shopName}
+              location={mechDetail.location}
+              rating={mechDetail.rating}
+              experience={mechDetail.experience}
+              mechId={mechDetail.id}
+            />
+          )
+        })}
+      </div>
 
-      {mechDetails.map((mechDetail) => {
-        return (
-          <MechanicsCard
-            key={mechDetail.id}
-            category={mechDetail.category}
-            image={mechDetail.photo}
-            name={mechDetail.contactInfo.name}
-            shopName={mechDetail.shopName}
-            location={mechDetail.location}
-            rating={mechDetail.rating}
-            price={mechDetail.avePriceRange}
-          />
-        )
-      })}
-
-    </div>
+    </center>
   )
 }
