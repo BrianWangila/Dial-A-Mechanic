@@ -12,6 +12,10 @@ export default function Home(){
     .then((resp) => resp.json())
     .then((mechanic) => setMechDetails(mechanic))
   }, [])
+
+  function handleAddSubmit(newData){
+    setMechDetails(...mechDetails, newData)
+  }
   
 
   return (
@@ -21,6 +25,7 @@ export default function Home(){
         {mechDetails.map((mechDetail) => {
           return (
             <MechanicsCard
+              onSubmitData={handleAddSubmit}
               key={mechDetail.id}
               category={mechDetail.category}
               image={mechDetail.photo}

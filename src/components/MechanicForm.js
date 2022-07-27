@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const POST_DATA = "http://localhost:2000/mechanics"
 
-export default function MechanicForm(){
+export default function MechanicForm({onSubmitData}){
 
   const [image, setImage] = useState("")
   const [category, setCategory] = useState("Heavy Machinery")
@@ -19,19 +19,18 @@ export default function MechanicForm(){
 
   function handleSubmit(e){
     e.preventDefault()
-    console.log("submit")
 
     const newData = {
-      "photo": image,
-      "category": category,
-      "shopName": shopName,
-      "number": number,
-      "name": name,
-      "email": email,
-      "about": about,
-      "experience": experience,
-      "location": location,
-      "rating": rating
+      photo: image,
+      category: category,
+      shopName: shopName,
+      number: number,
+      name: name,
+      email: email,
+      about: about,
+      experience: experience,
+      location: location,
+      rating: rating
     }
 
     fetch(POST_DATA, {
@@ -41,18 +40,18 @@ export default function MechanicForm(){
     })
     // console.log(newData)
     .then((resp) => resp.json())
-    .then((addedData) => console.log(addedData))
+    .then((addedData) => onSubmitData(addedData))
 
   }
 
   return(
-    <form style={{width: 50+"vw", margin:"auto"}} onSubmit={handleSubmit}>
-      <select className="form-select form-select-sm" onChange={(e) => setCategory(e.target.value)}>
-        <option selected>Select your Category group</option>
-        <option value="1">Heavy Machinery</option>
-        <option value="2">Break and Transmission</option>
-        <option value="3">Electrical Wiring</option>
-        <option value="3">Diesel Engines</option>
+    <form style={{width: 50+"vw", margin:"auto", marginTop: 20+"px"}} onSubmit={handleSubmit}>
+      <select className="mb-3 form-select form-select-sm" onChange={(e) => setCategory(e.target.value)}>
+        <option selected>Select Category</option>
+        <option value="Heavy Machinery">Heavy Machinery</option>
+        <option value="Break and Transmission">Break and Transmission</option>
+        <option value="Electrical Wiring">Electrical Wiring</option>
+        <option value="Diesel Engines">Diesel Engines</option>
       </select>
 
       <div className="mb-3">
@@ -105,10 +104,11 @@ export default function MechanicForm(){
       </div>
 
       <div className="mb-3">
-        <label className="form-label">Rating (*/5)</label>
-        <input className="form-control " type="text" value="1" readOnly
-        onChange={(e) => setRating(e.target.value)}
-        />
+      <label className="form-label">Rating (*/5)</label>
+      <select className="form-select form-select-sm" onChange={(e) => setCategory(e.target.value)}>
+        <option selected>Rating</option>
+        <option value="1">1</option>
+      </select>
       </div>
 
       <div className="mb-3">
@@ -123,7 +123,7 @@ export default function MechanicForm(){
         <label className="form-check-label">Create account</label>
       </div>
 
-      <Link to="/mechanic/create-account"><button type="submit" className="btn btn-primary">Join DAD</button></Link>
+      <Link to="/"><button type="submit" className="btn btn-primary">Join DAM</button></Link>
       <button>Try</button> 
     </form>
   )

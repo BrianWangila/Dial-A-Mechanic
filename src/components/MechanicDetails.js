@@ -23,16 +23,15 @@ export default function MechanicDetails(){
     .then((resp) => resp.json())
     .then((data) => {
       const mechanic = data[mechId-1]
-      console.log(mechanic)
 
       setImage(mechanic.photo)
       setShopName(mechanic.shopName)
       setAbout(mechanic.about)
       setRating(mechanic.rating)
       setExperience(mechanic.experience)
-      setEmail(mechanic.contactInfo.email)
-      setName(mechanic.contactInfo.name)
-      setNumber(mechanic.contactInfo.phone)
+      setEmail(mechanic.email)
+      setName(mechanic.name)
+      setNumber(mechanic.phone)
 
     })
   }, []) 

@@ -23,7 +23,7 @@ function App() {
         <Route exact path="/about-us" element={<AboutUs/>}></Route>
         <Route exact path="/search" element={<Search/>}></Route>
         <Route exact path="/mechanic/:mechId" element={<MechanicDetails/>}></Route>
-        <Route exact path="/dad/:login" element={<Login/>}></Route>
+        <Route exact path="/dam/:login" element={<Login/>}></Route>
         <Route exact path="/mechanic/:create-account" element={<MechanicForm />}></Route>
       </Routes>
     </Router>
