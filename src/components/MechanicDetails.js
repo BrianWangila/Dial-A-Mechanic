@@ -39,7 +39,7 @@ export default function MechanicDetails(){
   
   return(
     <div>
-      <center style={{marginTop: 20+"px", marginBottom: 20+"px"}}>
+      <center className="container" style={{marginTop: 20+"px", marginBottom: 20+"px"}}>
         <h2>{shopName}</h2>
         <div className="card" style={{width: 40+"rem"}}>
           <img src={image} className="card-img-top" alt={name}/>
