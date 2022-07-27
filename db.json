@@ -129,6 +129,32 @@
       "location": "Thika Road, Nairobi",
       "rating": "",
       "id": 10
+    },
+    {
+      "photo": "",
+      "category": "Break and Transmission",
+      "shopName": "",
+      "number": "",
+      "name": "",
+      "email": "",
+      "about": "",
+      "experience": "",
+      "location": "",
+      "rating": "1",
+      "id": 11
+    },
+    {
+      "photo": "",
+      "category": "Electrical Wiring",
+      "shopName": "",
+      "number": "",
+      "name": "yyyty",
+      "email": "",
+      "about": "",
+      "experience": "",
+      "location": "",
+      "rating": "1",
+      "id": 12
     }
   ]
 }

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const POST_DATA = "http://localhost:2000/mechanics"
 
-export default function MechanicForm({onSubmitData}){
+export default function MechanicForm({onHandleAddSubmit}){
 
   const [image, setImage] = useState("")
   const [category, setCategory] = useState("Heavy Machinery")
@@ -40,14 +40,14 @@ export default function MechanicForm({onSubmitData}){
     })
     // console.log(newData)
     .then((resp) => resp.json())
-    .then((addedData) => onSubmitData(addedData))
+    .then((addedData) => onHandleAddSubmit(addedData))
 
   }
 
   return(
     <form style={{width: 50+"vw", margin:"auto", marginTop: 20+"px"}} onSubmit={handleSubmit}>
       <select className="mb-3 form-select form-select-sm" onChange={(e) => setCategory(e.target.value)}>
-        <option selected>Select Category</option>
+        <option defaultValue="Select Category">Select Category</option>
         <option value="Heavy Machinery">Heavy Machinery</option>
         <option value="Break and Transmission">Break and Transmission</option>
         <option value="Electrical Wiring">Electrical Wiring</option>
@@ -105,8 +105,8 @@ export default function MechanicForm({onSubmitData}){
 
       <div className="mb-3">
       <label className="form-label">Rating (*/5)</label>
-      <select className="form-select form-select-sm" onChange={(e) => setCategory(e.target.value)}>
-        <option selected>Rating</option>
+      <select className="form-select form-select-sm" onChange={(e) => setRating(e.target.value)}>
+        <option>Rating</option>
         <option value="1">1</option>
       </select>
       </div>
