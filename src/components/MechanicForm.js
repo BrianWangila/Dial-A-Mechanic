@@ -20,6 +20,9 @@ export default function MechanicForm({onHandleAddSubmit}){
   function handleSubmit(e){
     e.preventDefault()
 
+    e.target.reset();
+
+
     const newData = {
       photo: image,
       category: category,
