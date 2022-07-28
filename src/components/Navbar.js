@@ -8,9 +8,9 @@ function Navbar(){
     <nav className="navbar header">
       
       <h5><span>DAM</span> Dial A Mechanic</h5>
-      <img src="https://www.bankrate.com/2021/08/09163309/Roadside-assistance-vs-AAA.jpg?auto=webp&optimize=high&crop=16:9"/>
+      {/* <img src="https://www.bankrate.com/2021/08/09163309/Roadside-assistance-vs-AAA.jpg?auto=webp&optimize=high&crop=16:9"/> */}
       
-      <nav style={{marginTop: 20+"px"}}>
+      <nav style={{background: "#beb9ab"}}>
         <div class="nav nav-tabs">
           <li class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
             <Link to="/" className="nav-link" >Home</Link>
@@ -29,7 +29,7 @@ function Navbar(){
       
 
 
-      <div className="container-fluid">
+      <div className="container-fluid search-left">
         <ul className="navbar-nav">
           <div className="dropdown">
             <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="">
