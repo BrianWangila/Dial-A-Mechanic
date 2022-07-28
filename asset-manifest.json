@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Dial-A-Mechanic/static/css/main.f098684e.css",
+    "main.js": "/Dial-A-Mechanic/static/js/main.ecbccb07.js",
+    "index.html": "/Dial-A-Mechanic/index.html",
+    "main.f098684e.css.map": "/Dial-A-Mechanic/static/css/main.f098684e.css.map",
+    "main.ecbccb07.js.map": "/Dial-A-Mechanic/static/js/main.ecbccb07.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f098684e.css",
+    "static/js/main.ecbccb07.js"
+  ]
+}
