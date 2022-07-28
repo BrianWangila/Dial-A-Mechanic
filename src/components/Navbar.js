@@ -9,8 +9,9 @@ function Navbar(){
       
       <h5><span>DAM</span> Dial A Mechanic</h5>
       <img src="https://www.bankrate.com/2021/08/09163309/Roadside-assistance-vs-AAA.jpg?auto=webp&optimize=high&crop=16:9"/>
-      <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      
+      <nav style={{marginTop: 20+"px"}}>
+        <div class="nav nav-tabs">
           <li class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
             <Link to="/" className="nav-link" >Home</Link>
           </li>
@@ -21,7 +22,7 @@ function Navbar(){
             <Link to="/about-us" className="nav-link">About Us</Link>
           </li>
           <li className="nav-link dropdown" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
-            <Link to="/search" className="nav-link">Search</Link>
+            <Link to="/search" className="nav-link">Contact Us</Link>
           </li>
         </div>
       </nav>
@@ -41,6 +42,13 @@ function Navbar(){
             </ul>
           </div>
         </ul>
+
+        <div >
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
       </div>
     </nav>
 

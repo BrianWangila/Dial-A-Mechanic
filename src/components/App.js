@@ -1,7 +1,7 @@
 import Home from './Home';
 import Login from './Login';
 import Navbar from './Navbar';
-import Search from './Search';
+import ContactUs from './ContactUs';
 import AboutUs from './AboutUs';
 import OurWork from './OurWork';
 import MechanicForm from './MechanicForm';
@@ -22,7 +22,7 @@ function App() {
         <Route exact path='/' element={<Home/>}></Route>
         <Route exact path='/our-work' element={<OurWork/>}></Route>
         <Route exact path="/about-us" element={<AboutUs/>}></Route>
-        <Route exact path="/search" element={<Search/>}></Route>
+        <Route exact path="/search" element={<ContactUs/>}></Route>
         <Route exact path="/mechanic/:mechId" element={<MechanicDetails/>}></Route>
         <Route exact path="/dam/:login" element={<Login/>}></Route>
         <Route exact path="/mechanic/:create-account" element={<MechanicForm />}></Route>
