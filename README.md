@@ -15,14 +15,16 @@ DAM is a single-page website that links motorist with car problems to their desi
 - Search component to search mechanics by city of category
 - an upload form for mechanics to add their profile and skills to the site
 - A way for the admin or mechanic to delete their specific profiles
-- 
+
 
 # Getting Started with DIAL A MECHANIC (with REACT)
 
+## Live Link
+- Click [Here](https://brianwangila.github.io/Dial-A-Mechanic/) to access the live link.
+
+
 # Description
 Let us get a deep dive into how to configure routing in REACT.
-
-
 # Getting Started
 In order for you to use the content on this repo, ensure you have the following:
 
