@@ -81,3 +81,14 @@
   padding: 3vw;
   border-radius: 20px;
 }
+
+.small-nav {
+  background-color: #e0dcdc;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: -200px;
+  
+}
+
+.navbar span {
+  
+}
