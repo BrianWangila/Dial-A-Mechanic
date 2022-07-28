@@ -74,3 +74,10 @@
   padding-bottom: 20px;
   padding-top: 20px;
 }
+
+.login {
+  border: 2px solid rgb(201, 196, 196);
+  width: 30vw;
+  padding: 3vw;
+  border-radius: 20px;
+}
