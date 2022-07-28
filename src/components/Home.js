@@ -11,12 +11,15 @@ export default function Home(){
     fetch(DISPLAY_MECHANICS)
     .then((resp) => resp.json())
     .then((mechanic) => setMechDetails(mechanic))
-  }, [])
+  }, [mechDetails])
 
   function handleAddSubmit(newData){
     setMechDetails(...mechDetails, newData)
   }
   
+  function handleDeleteFromData(card){
+    setMechDetails(mechDetails.filter((mechId) => mechId !== card.id))
+  }
 
   return (
     <center >
@@ -25,6 +28,7 @@ export default function Home(){
         {mechDetails.map((mechDetail) => {
           return (
             <MechanicsCard
+              onHandleDelete={handleDeleteFromData}
               onHandleAddSubmit={handleAddSubmit}
               key={mechDetail.id}
               category={mechDetail.category}
