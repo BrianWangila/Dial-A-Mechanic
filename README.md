@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# DIAL A MECHANIC (DAM)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## By Brian Wangila
 
-## Available Scripts
 
-In the project directory, you can run:
+# Description
+DAM is a single-page website that links motorist with car problems to their desired mechanics. The mechanics can be found all over the country, and in major cities and ready to help a stranded motorist get back on their journey. The site also offers mechanics an avenue to get clients and enhance their skills. The mechanics being situated all over the country make it easier for a motorist to get help as soon as they dial a number and explain their situation.
 
-### `npm start`
+# preview gif
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+        image.gif
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# Features
+- Search component to search mechanics by city of category
+- an upload form for mechanics to add their profile and skills to the site
+- A way for the admin or mechanic to delete their specific profiles
+- 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Getting Started with DIAL A MECHANIC (with REACT)
 
-### `npm run build`
+# Description
+Let us get a deep dive into how to configure routing in REACT.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Getting Started
+In order for you to use the content on this repo, ensure you have the following:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- A computer that runs on either of the following; (Windows 7+, Linux, Mac OS)
+- nodejs 9.0+
+- Some bit of patience for your own sanity.
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To use this repo on your machine requires some simple steps
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Alternative One
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Open a terminal / command line interface on your computer
+- Clone the repo by using the following:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+        git clone git@github.com:BrianWangila/Dial-A-Mechanic.git
 
-## Learn More
+- Be patient as it creates a copy on your local machine for you.
+- Change directory to the repo folder:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+        cd Dial-A-Mechanic
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- (Optional) Open it in ``Visual Studio Code``
 
-### Code Splitting
+        code .
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- (Alternate Option) Open it in any editor of your choice.
+- Hurray! You are one step closer to being as intelligent as Einstein.
 
-### Analyzing the Bundle Size
+### Alternative Two
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- On the top right corner of this page there is a button labelled ``Fork``.
+- Click on that button to fork the repo to your own account.
+- Take on the process in ``Alternative One`` above.
+- Remember to replace your username when cloning.
 
-### Making a Progressive Web App
+        git clone https://github.com/your-username-here/Dial-A-Mechanic.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+# Running the application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Running the application is very straight forward. You can use the following steps to run the app.
 
-### Deployment
+- Install required dependencies from npm
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+      npm install
 
-### `npm run build` fails to minify
+- Run the application on the browser
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+      npm start
+
+# Authors
+This project was contributed to by:
+- [Brian Wangila](https://github.com/BrianWangila/)
+
+# License
+The project is licensed under Apache 2.0.
+
+The Apache 2.0 [2022] [Brian Wangila] Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
