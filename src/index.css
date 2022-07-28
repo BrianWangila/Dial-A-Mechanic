@@ -19,9 +19,8 @@ code {
 
 .flexbox {
   display: flex;
-  justify-content: space-between;
-  /* background-image: url("https://www.bankrate.com/2021/08/09163309/Roadside-assistance-vs-AAA.jpg?auto=webp&optimize=high&crop=16:9");
-  background-size: auto; */
+  justify-content: space-around;
+  margin-left: 100px;
 
 }
 
@@ -51,10 +50,6 @@ code {
   flex-direction: column;
 }
 
-.footer-flex {
-  display: flex;
-
-}
 
 .navbar img {
   height: 60vh;
@@ -77,3 +72,12 @@ code {
   padding-right: 4vw;
 }
 
+.bg-footer {
+  background-color: #020100;
+  color: white;
+
+}
+
+.header {
+  background-color: #0c0701;
+}

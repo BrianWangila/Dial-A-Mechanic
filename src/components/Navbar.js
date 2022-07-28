@@ -5,7 +5,7 @@ function Navbar(){
 
   return(
     
-    <nav className="navbar bg-light">
+    <nav className="navbar header">
       
       <h5><span>DAM</span> Dial A Mechanic</h5>
       <img src="https://www.bankrate.com/2021/08/09163309/Roadside-assistance-vs-AAA.jpg?auto=webp&optimize=high&crop=16:9"/>
@@ -16,7 +16,7 @@ function Navbar(){
             <Link to="/" className="nav-link" >Home</Link>
           </li>
           <li className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
-            <Link to="/our-work" className="nav-link">Our Work</Link>
+            <Link to="/our-work" className="nav-link">Our Services</Link>
           </li>
           <li className="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
             <Link to="/about-us" className="nav-link">About Us</Link>
