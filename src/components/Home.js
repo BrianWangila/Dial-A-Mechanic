@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import MechanicsCard from "./MechanicsCard";
 
 
-const DISPLAY_MECHANICS = "http://localhost:2000/mechanics"
+const DISPLAY_MECHANICS = "https://gentle-tundra-19961.herokuapp.com/mechanics"
 export default function Home(){
 
   const [mechDetails, setMechDetails] = useState([])

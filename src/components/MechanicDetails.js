@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 
 
-const DISPLAY_MECHANICS = "http://localhost:2000/mechanics?i="
+const DISPLAY_MECHANICS = "https://gentle-tundra-19961.herokuapp.com/mechanics"
 
 export default function MechanicDetails(){
 

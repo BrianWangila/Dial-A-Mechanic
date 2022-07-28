@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 
 
-const POST_DATA = "http://localhost:2000/mechanics"
+const POST_DATA = "https://gentle-tundra-19961.herokuapp.com/mechanics"
 
 export default function MechanicForm({onHandleAddSubmit}){
 

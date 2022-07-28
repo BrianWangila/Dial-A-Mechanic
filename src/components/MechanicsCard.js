@@ -7,7 +7,7 @@ export default function MechanicsCard({category, image, name, shopName, location
 
 
   function handleDelete(){
-    fetch(`http://localhost:2000/mechanics/${mechId}`, {
+    fetch(`https://gentle-tundra-19961.herokuapp.com/mechanics/${mechId}`, {
       method: "DELETE",
       headers: {"Content-Type":"application/json"}
     })
