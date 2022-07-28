@@ -7,6 +7,7 @@ import OurWork from './OurWork';
 import MechanicForm from './MechanicForm';
 import MechanicDetails from './MechanicDetails';
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Footer from './Footer';
 
 
 function App() {
@@ -26,6 +27,10 @@ function App() {
         <Route exact path="/dam/:login" element={<Login/>}></Route>
         <Route exact path="/mechanic/:create-account" element={<MechanicForm />}></Route>
       </Routes>
+
+      <div>
+        <Footer />
+      </div>
     </Router>
 
   );

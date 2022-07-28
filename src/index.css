@@ -18,9 +18,9 @@ code {
 }
 
 .flexbox {
-  display: flex;
-  flex-direction: column;
-  /* background-image: url("https://www.bankrate.com/2021/08/09163309/Roadside-assistance-vs-AAA.jpg?auto=webp&optimize=high&crop=16:9"); */
+  /* display: flex;
+  flex-direction: column; */
+  background-image: url("https://www.bankrate.com/2021/08/09163309/Roadside-assistance-vs-AAA.jpg?auto=webp&optimize=high&crop=16:9");
   background-size: auto;
 
 }
@@ -44,4 +44,19 @@ code {
   width: 40vw;
   height: 60vh;
   padding: 2vw;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-flex {
+  display: flex;
+
+}
+
+.navbar img {
+  height: 60vh;
+  width: 80vw;
 }
