@@ -1,20 +1,31 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
-export default function Login(){
+export default function Login({onLogIn}){
 
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
+  const [credentials, setCredentials] = useState({
+    email: "",
+    password: ""
+  })
+    
+  const navigate = useNavigate()
+
+  function handleChange(e){
+    setCredentials({
+      ...credentials, [e.target.name]: e.target.value
+    })
+  }
 
   function handleSubmit(e){
     e.preventDefault()
 
     e.target.reset();
 
+    onLogIn()
+    navigate.push("/")
 
-    setEmail("")
-    setPassword("")
+
   }
 
   return(
@@ -25,18 +36,28 @@ export default function Login(){
     <form className="login" onSubmit={handleSubmit}>
       <div className="mb-6">
         <label className="form-label">Email address</label>
-        <input type="email" value={email} className="form-control" placeholder="johndoe@mail.com" required onChange={(e) => setEmail(e.target.value)}/>
+        <input
+          type="email"
+          name="email"
+          value={credentials.email} 
+          className="form-control" 
+          placeholder="johndoe@mail.com" required 
+          onChange={handleChange}/>
         <div className="form-text">Your email will not be shared</div>
       </div>
+
       <div className="mb-3">
         <label className="form-label">Password</label>
-        <input type="password" value={password} className="form-control" required onChange={(e) => setPassword(e.target.value)}/>
+        <input 
+          type="password"
+          name="password"
+          value={credentials.password} 
+          className="form-control" required 
+          onChange={handleChange}/>
       </div>
-      <div className="mb-3 form-check">
-        <input type="checkbox" className="form-check-input" />
-        <label className="">Receive weekly newsletters</label>
-      </div>
-      <Link to="/mechanic/create-account"><button type="submit" className="btn btn-primary">Login</button></Link>
+ 
+      {/* <Link to="/mechanic/create-account"><button type="submit" className="btn btn-primary">Login</button></Link> */}
+      <button type="submit" className="btn btn-primary">Login</button>
     </form>
     </center>
   )

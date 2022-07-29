@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const POST_DATA = "https://gentle-tundra-19961.herokuapp.com/mechanics"
 // const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
-export default function MechanicForm({onHandleAddSubmit}){
+export default function MechanicForm({onHandleAddSubmit, onFillForm}){
 
   const [image, setImage] = useState("")
   const [category, setCategory] = useState("Heavy Machinery")
@@ -47,14 +47,15 @@ export default function MechanicForm({onHandleAddSubmit}){
     .then((resp) => resp.json())
     .then((addedData) => onHandleAddSubmit(addedData))
     
+    alert("Your details have been submitted. \n Go to Home page to view.")
+
   }
-
-
+  
 
   return(
     <div>
       <center style={{padding: 5+"vh"}}><h3>Thank you for joining <span>DAM</span> in the quest <br></br> to serve our clients better</h3></center>
-      <form className="login" style={{width: 50+"vw", margin:"auto", marginTop: 20+"px"}} onSubmit={handleSubmit}>
+      <form className="login" style={{width: 50+"vw", margin:"auto", marginTop: 20+"px"}} onSubmit={handleSubmit} >
         <h6>Kindly, provide accurate information</h6>
         <select className="mb-3 form-select form-select-sm" onChange={(e) => setCategory(e.target.value)}>
           <option defaultValue="Select Category">Select Category</option>
@@ -132,9 +133,8 @@ export default function MechanicForm({onHandleAddSubmit}){
           <input type="checkbox" className="form-check-input" required/>
           <label className="form-check-label">Create account</label>
         </div>
-
-        <Link to="/"><button type="submit" className="btn btn-primary">Join DAM</button></Link>
-        <button>Try</button>        
+        <button type="submit" className="btn btn-primary">Join DAM</button> 
+        
       </form>
    
     </div>
