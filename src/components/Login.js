@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 export default function Login({onLogIn}){
@@ -9,7 +9,6 @@ export default function Login({onLogIn}){
     password: ""
   })
     
-  const navigate = useNavigate()
 
   function handleChange(e){
     setCredentials({
@@ -22,10 +21,7 @@ export default function Login({onLogIn}){
 
     e.target.reset();
 
-    onLogIn()
-    navigate.push("/")
-
-
+    
   }
 
   return(
@@ -34,6 +30,17 @@ export default function Login({onLogIn}){
       <h3>Login to Access the Submission Form</h3>
     </div>
     <form className="login" onSubmit={handleSubmit}>
+      <div className="mb-6">
+        <label className="form-label">First and Last Name</label>
+        <input
+          type="email"
+          name="email"
+          value={credentials.email} 
+          className="form-control" 
+          placeholder="johndoe@mail.com" required 
+          onChange={handleChange}/>
+        <div className="form-text">Your email will not be shared</div>
+      </div>
       <div className="mb-6">
         <label className="form-label">Email address</label>
         <input

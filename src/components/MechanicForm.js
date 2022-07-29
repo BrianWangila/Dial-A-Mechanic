@@ -133,6 +133,8 @@ export default function MechanicForm({onHandleAddSubmit, onFillForm}){
           <input type="checkbox" className="form-check-input" required/>
           <label className="form-check-label">Create account</label>
         </div>
+
+        {/* <Link to="/"><button type="submit" className="btn btn-primary">Join DAMs</button></Link> */}
         <button type="submit" className="btn btn-primary">Join DAM</button> 
         
       </form>
