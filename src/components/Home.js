@@ -1,18 +1,42 @@
 import React, { useEffect, useState } from "react";
 import MechanicsCard from "./MechanicsCard";
+import Login from "./Login";
 
 
 const DISPLAY_MECHANICS = "https://gentle-tundra-19961.herokuapp.com/mechanics"
 export default function Home(){
 
-  const [error, setError] = useState(null)
   const [isLoaded, setIsLoaded] = useState(false)
   const [mechDetails, setMechDetails] = useState([])
-
   const [search, setSearch] = useState("")
-
   const [searchParam] = useState(["category", "location"])
+  const [error, setError] = useState("")
+  const [user, setUser] = useState({
+    name: "",
+    email: ""
+  })
+  const adminUser = {
+    email: "admin@gmail.com",
+    password: "admin123"
+  }
 
+  const Logins = (details) => {
+    console.log(details)
+
+    if (details.email == adminUser.email && details.password == adminUser.password){
+      console.log("logged in")
+      // setUser({
+      //   name: details.name,
+      //   email: details.email
+      // })
+    } else {
+      console.log("Details do not match")
+    }
+  }
+
+  const Logout = () => {
+    console.log("Logout")
+  }
 
   useEffect(() => {
     fetch(DISPLAY_MECHANICS)
@@ -46,10 +70,7 @@ export default function Home(){
     })
   }
 
-  if (error) {
-    return <div>Error: {error.message}</div>
-  }
-  else if (!isLoaded){
+ if (!isLoaded){
    return <center>Loading data, please wait...</center> 
 
   }
@@ -57,38 +78,45 @@ export default function Home(){
 
   return (
     <center >
-      <h3 className="home-title">Find A Mechanic in Seconds</h3>
-      <div  className="search">
-        <form className="d-flex" role="search">
-          <input
-            className="form-control me-2" 
-            type="search" 
-            placeholder="Search by City Name or Category..." 
-            aria-label="Search"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            />
-        </form>
+      {(user.email != "") ? (
+      <div>
+        <h3 className="home-title">Hi<span>{user.name}</span>Find A Mechanic in Seconds</h3>
+        <div className="search">
+          <form className="d-flex" role="search">
+            <input
+              className="form-control me-2" 
+              type="search" 
+              placeholder="Search by City Name or Category..." 
+              aria-label="Search"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              />
+          </form>
+        </div>
+        <div className="row">
+          {handleSearch(mechDetails).map((mechDetail) => {
+            return (
+              <MechanicsCard
+                onHandleDelete={handleDeleteFromData}
+                onHandleAddSubmit={handleAddSubmit}
+                key={mechDetail.id}
+                category={mechDetail.category}
+                image={mechDetail.photo}
+                name={mechDetail.name}
+                shopName={mechDetail.shopName}
+                location={mechDetail.location}
+                rating={mechDetail.rating}
+                experience={mechDetail.experience}
+                mechId={mechDetail.id}
+              />
+            )
+          })}
+        </div>
       </div>
-      <div className="row">
-        {handleSearch(mechDetails).map((mechDetail) => {
-          return (
-            <MechanicsCard
-              onHandleDelete={handleDeleteFromData}
-              onHandleAddSubmit={handleAddSubmit}
-              key={mechDetail.id}
-              category={mechDetail.category}
-              image={mechDetail.photo}
-              name={mechDetail.name}
-              shopName={mechDetail.shopName}
-              location={mechDetail.location}
-              rating={mechDetail.rating}
-              experience={mechDetail.experience}
-              mechId={mechDetail.id}
-            />
-          )
-        })}
-      </div>
+      ) : (
+      <Login Logins={Logins} error={error}/>
+      )}
+ 
 
     </center>
   )

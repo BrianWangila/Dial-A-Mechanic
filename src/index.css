@@ -66,7 +66,7 @@
   display: flex;
   flex-direction: column;
   background-image: url("https://www.ramonstireandservice.com/portals/42/Skins/master/img/img-welcome.jpg");
-  background-size: auto;
+  background-size: contain;
 }
 
 .search-left {
@@ -100,7 +100,7 @@
   font-size: 8vh;
   /* margin-top: -10px; */
   font-family: fantasy;
-  color: rgb(12, 12, 204);
+  color: rgb(36, 36, 173);
   font-weight: 900;
   margin: 3vh;
   border: 5px solid rgb(71, 69, 77);

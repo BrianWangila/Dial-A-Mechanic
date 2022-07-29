@@ -47,15 +47,15 @@ export default function MechanicForm({onHandleAddSubmit, onFillForm}){
     .then((resp) => resp.json())
     .then((addedData) => onHandleAddSubmit(addedData))
     
-    alert("Your details have been submitted. \n Go to Home page to view.")
-
+    // alert("Your details have been submitted. \n Go to Home page to view.")
+    {<Link to="/" className="btn btn-primary">Join DAMs</Link>}
   }
   
 
   return(
     <div>
       <center style={{padding: 5+"vh"}}><h3>Thank you for joining <span>DAM</span> in the quest <br></br> to serve our clients better</h3></center>
-      <form className="login" style={{width: 50+"vw", margin:"auto", marginTop: 20+"px"}} onSubmit={handleSubmit} >
+      <form className="login" style={{width: 50+"vw", margin:"auto", marginTop: 20+"px"}} onSubmit={handleSubmit}  >
         <h6>Kindly, provide accurate information</h6>
         <select className="mb-3 form-select form-select-sm" onChange={(e) => setCategory(e.target.value)}>
           <option defaultValue="Select Category">Select Category</option>

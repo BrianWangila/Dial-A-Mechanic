@@ -1,3 +1,4 @@
+import { React, useState } from 'react';
 import Home from './Home';
 import Login from './Login';
 import Navbar from './Navbar';
@@ -10,7 +11,9 @@ import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './Footer';
 
 
+
 function App() {
+
   return (
     <Router>
       <div>
@@ -24,7 +27,7 @@ function App() {
         <Route exact path="/about-us" element={<AboutUs/>}></Route>
         <Route exact path="/search" element={<ContactUs/>}></Route>
         <Route exact path="/mechanic/:mechId" element={<MechanicDetails/>}></Route>
-        <Route exact path="/dam/:login" element={<Login/>}></Route>
+        <Route exact path="/dam/:login" element={<Login />}></Route>
         <Route exact path="/mechanic/:create-account" element={<MechanicForm />}></Route>
       </Routes>
 

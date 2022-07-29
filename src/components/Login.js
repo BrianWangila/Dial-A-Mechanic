@@ -2,24 +2,25 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 
-export default function Login({onLogIn}){
+export default function Login({Logins, error}){
 
-  const [credentials, setCredentials] = useState({
+  const [details, setDetails] = useState({
+    name: "",
     email: "",
     password: ""
-  })
-    
-
-  function handleChange(e){
-    setCredentials({
-      ...credentials, [e.target.name]: e.target.value
     })
-  }
+
+  // function handleChange(e){
+  //   setDetails({
+  //     ...details, name: e.target.value
+  //   })
+  // }
 
   function handleSubmit(e){
     e.preventDefault()
+    // e.target.reset();
 
-    e.target.reset();
+    Logins(details)
 
     
   }
@@ -31,25 +32,27 @@ export default function Login({onLogIn}){
     </div>
     <form className="login" onSubmit={handleSubmit}>
       <div className="mb-6">
+        {/* ERROR */}
         <label className="form-label">First and Last Name</label>
         <input
-          type="email"
-          name="email"
-          value={credentials.email} 
+          type="text"
+          name="name"
+          value={details.name} 
           className="form-control" 
-          placeholder="johndoe@mail.com" required 
-          onChange={handleChange}/>
+          placeholder="John Doe" required 
+          onChange={(e) => setDetails({...details, name: e.target.value})}/>
         <div className="form-text">Your email will not be shared</div>
       </div>
+
       <div className="mb-6">
         <label className="form-label">Email address</label>
         <input
           type="email"
           name="email"
-          value={credentials.email} 
+          value={details.email} 
           className="form-control" 
           placeholder="johndoe@mail.com" required 
-          onChange={handleChange}/>
+          onChange={(e) => setDetails({...details, email: e.target.value})}/>
         <div className="form-text">Your email will not be shared</div>
       </div>
 
@@ -58,9 +61,9 @@ export default function Login({onLogIn}){
         <input 
           type="password"
           name="password"
-          value={credentials.password} 
+          value={details.password} 
           className="form-control" required 
-          onChange={handleChange}/>
+          onChange={(e) => setDetails({...details, password: e.target.value})}/>
       </div>
  
       {/* <Link to="/mechanic/create-account"><button type="submit" className="btn btn-primary">Login</button></Link> */}
