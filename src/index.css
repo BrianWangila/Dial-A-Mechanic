@@ -89,23 +89,28 @@
 }
 
 .navbar-title {
-  background-color: #97938a;
-  width:100%;
-  height: 60px;
-  margin-top: -10px;
+  height: 6vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
 .navbar-title span {
-  font-size: 50px;
+  font-size: 8vh;
+  /* margin-top: -10px; */
   font-family: fantasy;
   color: rgb(12, 12, 204);
   font-weight: 900;
-  margin: 20px;
-  border: 5px solid grey;
+  margin: 3vh;
+  border: 5px solid rgb(71, 69, 77);
   border-radius: 20px;
+}
+
+.navbar-title h5 {
+  color: rgb(101, 118, 216);
+  font-size: 10vh;
+  font-weight: 500;
 }
 
 .f-span {

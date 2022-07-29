@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Navbar(){
 
@@ -7,8 +8,8 @@ function Navbar(){
     
     <nav className="navbar header">
       <div className="navbar-title">
-        <h5><span>DAM</span> Dial A Mechanic</h5>
-
+       <span>DAM</span> 
+         <h5>Dial A Mechanic</h5> <FontAwesomeIcon icon="fa-light fa-phone-rotary" />
       </div>
 
       <nav className="small-nav">
