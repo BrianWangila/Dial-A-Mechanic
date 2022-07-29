@@ -2,7 +2,9 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 
 
+
 const POST_DATA = "https://gentle-tundra-19961.herokuapp.com/mechanics"
+// const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
 export default function MechanicForm({onHandleAddSubmit}){
 
@@ -44,8 +46,10 @@ export default function MechanicForm({onHandleAddSubmit}){
     // console.log(newData)
     .then((resp) => resp.json())
     .then((addedData) => onHandleAddSubmit(addedData))
-
+    
   }
+
+
 
   return(
     <div>
@@ -130,8 +134,9 @@ export default function MechanicForm({onHandleAddSubmit}){
         </div>
 
         <Link to="/"><button type="submit" className="btn btn-primary">Join DAM</button></Link>
-        <button>Try</button> 
+        <button>Try</button>        
       </form>
+   
     </div>
   )
 }

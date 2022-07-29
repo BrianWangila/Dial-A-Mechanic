@@ -5,6 +5,8 @@ import MechanicsCard from "./MechanicsCard";
 const DISPLAY_MECHANICS = "https://gentle-tundra-19961.herokuapp.com/mechanics"
 export default function Home(){
 
+  const [error, setError] = useState(null)
+  
   const [mechDetails, setMechDetails] = useState([])
 
   useEffect(() => {
@@ -23,7 +25,7 @@ export default function Home(){
 
   return (
     <center >
-      <h2>Find A Mechanic in Seconds</h2>
+      <h3 className="home-title">Find A Mechanic in Seconds</h3>
       <div className="row">
         {mechDetails.map((mechDetail) => {
           return (

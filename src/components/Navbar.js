@@ -6,10 +6,26 @@ function Navbar(){
   return(
     
     <nav className="navbar header">
-      
-      <h5><span>DAM</span> Dial A Mechanic</h5>
-      {/* <img src="https://www.bankrate.com/2021/08/09163309/Roadside-assistance-vs-AAA.jpg?auto=webp&optimize=high&crop=16:9"/> */}
-      
+      <div className="navbar-title">
+        {/* <div style={{paddingRight: 40+"vw"}}> */}
+        <h5><span>DAM</span> Dial A Mechanic</h5>
+        {/* </div> */}
+        {/* <div className="container-fluid">
+          <ul className="navbar-nav">
+            <div className="dropdown">
+              <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="">
+                Are you a Mechanic ?
+              </button>
+              <ul className="dropdown-menu">          
+                <li className="nav-item">
+                  <Link to="/dam/login" className="nav-link">Create Account</Link>
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </div> */}
+      </div>
+
       <nav className="small-nav">
         <div className="nav nav-tabs">
           <li className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
@@ -26,8 +42,6 @@ function Navbar(){
           </li>
         </div>
       </nav>
-      
-
 
       <div className="container-fluid search-left">
         <ul className="navbar-nav">

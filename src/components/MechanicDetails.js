@@ -38,13 +38,13 @@ export default function MechanicDetails(){
   
   return(
     <div>
-      <center className="container" style={{marginTop: 20+"px", marginBottom: 20+"px"}}>
+      <center className="container" style={{marginTop: 10+"vh", marginBottom: 10+"vh"}}>
         <h2>{shopName}</h2>
         <div className="card" style={{width: 40+"rem"}}>
           <img src={image} className="card-img-top" alt={name}/>
           <div className="card-body">
             <h5 className="card-title">{name}</h5>
-          <p className="card-text">{about}</p>
+          <p className="card-text" style={{minHeight: 35+"vh"}}>{about}</p>
           </div>
           <ul className="list-group list-group-flush text-bg-info">
             <li className="list-group-item badge text-bg-info">Tel: {number}</li>
@@ -52,10 +52,6 @@ export default function MechanicDetails(){
             <li className="list-group-item badge text-bg-info">Experience: {experience} years</li>
             <li className="list-group-item badge text-bg-info">Rating: {rating} / 5</li>
           </ul>
-          <div className="card-body">
-            <Link to="" className="card-link">Call Me</Link>
-            <Link to="" className="card-link">Email Me</Link>
-          </div>
         </div>
       </center>
     </div>

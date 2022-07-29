@@ -32,11 +32,6 @@
   padding: 2vw;
 }
 
-.navbar {
-  display: flex;
-  flex-direction: column;
-}
-
 
 .navbar img {
   height: 60vh;
@@ -68,6 +63,10 @@
 .header {
   background-color: #beb8aa;
   height: 60vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://cdn.autotrader.co.nz/at-listing/files/30/0/fc973591-b763-4ac3-a535-075209dc7b6f.jpg?sv=2018-03-28&sr=b&sig=gVVXmLm%2FqLwWqDHCu1ZnqK8wfZKeRhD5GVW3WQzBktQ%3D&se=2041-08-16T01%3A05%3A15Z&sp=r ");
+  background-size: auto;
 }
 
 .search-left {
@@ -89,6 +88,38 @@
   
 }
 
-.navbar span {
-  
+.navbar-title {
+  background-color: #97938a;
+  width:100%;
+  height: 60px;
+  margin-top: -10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title span {
+  font-size: 50px;
+  font-family: fantasy;
+  color: rgb(12, 12, 204);
+  font-weight: 900;
+  margin: 20px;
+  border: 5px solid grey;
+  border-radius: 20px;
+}
+
+.f-span {
+  font-size: 50px;
+  font-family: fantasy;
+  color: rgb(12, 12, 204);
+  font-weight: 900;
+  border: 3px solid rgb(26, 25, 25);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-title {
+  margin-top: 8vh;
+  margin-bottom: 10vh;
 }

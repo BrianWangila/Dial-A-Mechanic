@@ -5,7 +5,8 @@ function Footer (){
 
   return(
   <nav className="bg-footer" style={{ marginTop: 2+"vh"}}>
-    <center style={{margin: 5+"vh", padding: 2+"vh"}}><h5><span>DAM</span> Dial A Mechanic</h5></center>
+    <center style={{margin: 5+"vh", padding: 2+"vh"}}><span className="f-span">DAM</span>
+    </center>
     <div> 
       <div className="flexbox">
         <div>
@@ -50,9 +51,10 @@ function Footer (){
       </div>
     </div>
 
-    <center style={{fontSize: 15, paddingTop: 10, paddingBottom: 4}}>
-        <p>Design by Brian</p>
+    <center style={{fontSize: 15, paddingTop: 5+"vh", paddingBottom: 4}}>
+        <p>© 2022 | Copyright | Design by Brian Wangila</p>
     </center>
+    
   </nav>
   )
 }
