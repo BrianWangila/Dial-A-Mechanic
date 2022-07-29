@@ -13,6 +13,7 @@
 
 }
 
+
 .flexbox img {
   height: 40vh;
   width: 50vw;
@@ -100,7 +101,6 @@
   background-color: #e0dcdc;
   border-radius: 10px 10px 0 0;
   margin-bottom: -200px;
-  
 }
 
 .navbar-title {
@@ -115,7 +115,7 @@
   font-size: 8vh;
   /* margin-top: -10px; */
   font-family: fantasy;
-  color: rgb(36, 36, 173);
+  color: rgb(245, 54, 29);
   font-weight: 900;
   margin: 3vh;
   border: 5px solid rgb(71, 69, 77);
@@ -123,7 +123,7 @@
 }
 
 .navbar-title h5 {
-  color: rgb(101, 118, 216);
+  color: rgb(219, 39, 7);
   font-size: 10vh;
   font-weight: 500;
 }
@@ -187,7 +187,6 @@
 
 .flexbox ul {
   list-style: none;
-  color: red;
 
 }
 
