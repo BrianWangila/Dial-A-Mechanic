@@ -6,8 +6,8 @@
 
 .flexbox {
   display: flex;
-  justify-content: space-around;
-  margin-left: 100px;
+  justify-content: space-between;
+  margin-left: ;
 
 }
 
@@ -57,7 +57,20 @@
 .bg-footer {
   background-color: #020100;
   color: white;
+  text-decoration: none;
 
+}
+
+.bg-footer .subscribe input {
+  height: 8vh;
+  width: 25vw;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.bg-footer button {
+  padding: 6px 12px 6px 12px;
 }
 
 .header {

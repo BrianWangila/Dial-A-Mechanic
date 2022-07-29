@@ -7,10 +7,9 @@ function Footer (){
   <nav className="bg-footer" style={{ marginTop: 2+"vh"}}>
     <center style={{margin: 5+"vh", padding: 2+"vh"}}><span className="f-span">DAM</span>
     </center>
-    <div> 
       <div className="flexbox">
-        <div>
-          <h5>Contact Us</h5>
+        <div className="contact">
+          <h6>Contact Us</h6>
           <ul>
             <li>Facebook</li>
             <li>Instagram</li>
@@ -19,8 +18,8 @@ function Footer (){
           </ul>
         </div>
 
-        <div>
-          <h5>About Us</h5>
+        <div className="about">
+          <h6>About Us</h6>
           <ul>
             <li>About</li>
             <li>Contact</li>
@@ -28,28 +27,18 @@ function Footer (){
             <li>Privacy Policy</li>
           </ul>
         </div>
-        <div style={{marginRight: 10+"px"}}>
-          <h5>Subscribe to our weekly newsletter</h5>
-        <form class="row g-3">
-          <div class="col-md-6">
-            <input type="email" class="form-control" placeholder="Type your Email Address"/>
+        <div className="subscribe">
+          <h6>Subscribe to our weekly newsletter</h6>
+        <form className="row">
+          <div className="">
+            <input type="email" class="form" placeholder="Type your Email Address"/>
           </div>
-
-          <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" required/>
-              <label class="form-check-label">
-                Subscribe
-              </label>
-            </div>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="footer-submit">
+            <button type="submit" class="btn btn-info">Submit</button>
           </div>
         </form>
         </div>
       </div>
-    </div>
 
     <center style={{fontSize: 15, paddingTop: 5+"vh", paddingBottom: 4}}>
         <p>© 2022 | Copyright | Design by Brian Wangila</p>
