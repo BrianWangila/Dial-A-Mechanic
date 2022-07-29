@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Dial-A-Mechanic/static/css/main.a5ca85b5.css",
-    "main.js": "/Dial-A-Mechanic/static/js/main.2d24a2ba.js",
+    "main.css": "/Dial-A-Mechanic/static/css/main.23c6e9d9.css",
+    "main.js": "/Dial-A-Mechanic/static/js/main.c6cc9d16.js",
     "index.html": "/Dial-A-Mechanic/index.html",
-    "main.a5ca85b5.css.map": "/Dial-A-Mechanic/static/css/main.a5ca85b5.css.map",
-    "main.2d24a2ba.js.map": "/Dial-A-Mechanic/static/js/main.2d24a2ba.js.map"
+    "main.23c6e9d9.css.map": "/Dial-A-Mechanic/static/css/main.23c6e9d9.css.map",
+    "main.c6cc9d16.js.map": "/Dial-A-Mechanic/static/js/main.c6cc9d16.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5ca85b5.css",
-    "static/js/main.2d24a2ba.js"
+    "static/css/main.23c6e9d9.css",
+    "static/js/main.c6cc9d16.js"
   ]
 }
