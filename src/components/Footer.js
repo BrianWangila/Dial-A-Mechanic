@@ -29,7 +29,7 @@ function Footer (){
         </div>
         <div className="subscribe">
           <h6>Subscribe to our weekly newsletter</h6>
-        <form className="row">
+        <form className="form-bg">
           <div className="">
             <input type="email" class="form" placeholder="Type your Email Address"/>
           </div>

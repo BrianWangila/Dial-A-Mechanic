@@ -15,7 +15,7 @@ function Navbar(){
       <nav className="small-nav">
         <div className="nav nav-tabs">
           <li className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
-            <Link to="/" className="nav-link" >Home</Link>
+            <Link to="/home" className="nav-link" >Home</Link>
           </li>
           <li className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
             <Link to="/our-work" className="nav-link">Our Services</Link>

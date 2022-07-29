@@ -23,15 +23,15 @@ export default function Home(){
   const Logins = (details) => {
     console.log(details)
 
-    if (details.email == adminUser.email && details.password == adminUser.password){
-      console.log("logged in")
+    // if (details.email == adminUser.email && details.password == adminUser.password){
+    //   console.log("logged in")
       setUser({
         name: details.name,
         email: details.email
       })
-    } else {
-      console.log("Details do not match")
-    }
+    // } else {
+    //   console.log("Details do not match")
+    // }
   }
 
   const Logout = () => {

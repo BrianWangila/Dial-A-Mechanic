@@ -7,7 +7,9 @@
 .flexbox {
   display: flex;
   justify-content: space-between;
-  margin-left: ;
+  margin: auto;
+  padding-left: 10vw;
+  text-align: justify;
 
 }
 
@@ -175,4 +177,20 @@
   padding-bottom: 7px;
   color: white;
   border: none;
+}
+
+.contact, .about, .subscribe {
+  border: 2px solid rgb(26, 24, 24);
+  padding: 3vh;
+  border-radius: 10px;
+}
+
+.flexbox ul {
+  list-style: none;
+  color: red;
+
+}
+
+.subscribe {
+  margin-right: 3vw;
 }
