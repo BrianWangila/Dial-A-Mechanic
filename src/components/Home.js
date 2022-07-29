@@ -25,10 +25,10 @@ export default function Home(){
 
     if (details.email == adminUser.email && details.password == adminUser.password){
       console.log("logged in")
-      // setUser({
-      //   name: details.name,
-      //   email: details.email
-      // })
+      setUser({
+        name: details.name,
+        email: details.email
+      })
     } else {
       console.log("Details do not match")
     }
@@ -36,6 +36,10 @@ export default function Home(){
 
   const Logout = () => {
     console.log("Logout")
+    setUser({
+      name: "",
+      email: ""
+    })
   }
 
   useEffect(() => {
@@ -80,8 +84,9 @@ export default function Home(){
     <center >
       {(user.email != "") ? (
       <div>
-        <h3 className="home-title">Hi<span>{user.name}</span>Find A Mechanic in Seconds</h3>
+        <h3 className="home-title">Hello<span style={{color: "darkBlue", fontWeight: 600, fontSize: 40+"px"}}> {user.name}, </span>Find A Mechanic in Seconds</h3>
         <div className="search">
+          <button className="logout" onClick={Logout}>Logout</button>
           <form className="d-flex" role="search">
             <input
               className="form-control me-2" 
@@ -114,7 +119,7 @@ export default function Home(){
         </div>
       </div>
       ) : (
-      <Login Logins={Logins} error={error}/>
+      <Login Logins={Logins} error={error} />
       )}
  
 

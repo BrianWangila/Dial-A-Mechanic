@@ -10,11 +10,6 @@ export default function Login({Logins, error}){
     password: ""
     })
 
-  // function handleChange(e){
-  //   setDetails({
-  //     ...details, name: e.target.value
-  //   })
-  // }
 
   function handleSubmit(e){
     e.preventDefault()

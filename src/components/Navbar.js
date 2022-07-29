@@ -9,7 +9,7 @@ function Navbar(){
     <nav className="navbar header">
       <div className="navbar-title">
        <span>DAM</span> 
-         <h5>Dial A Mechanic</h5> <FontAwesomeIcon icon="fa-light fa-phone-rotary" />
+         <h5>Dial A Mechanic</h5>
       </div>
 
       <nav className="small-nav">
