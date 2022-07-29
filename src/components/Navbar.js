@@ -7,23 +7,8 @@ function Navbar(){
     
     <nav className="navbar header">
       <div className="navbar-title">
-        {/* <div style={{paddingRight: 40+"vw"}}> */}
         <h5><span>DAM</span> Dial A Mechanic</h5>
-        {/* </div> */}
-        {/* <div className="container-fluid">
-          <ul className="navbar-nav">
-            <div className="dropdown">
-              <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="">
-                Are you a Mechanic ?
-              </button>
-              <ul className="dropdown-menu">          
-                <li className="nav-item">
-                  <Link to="/dam/login" className="nav-link">Create Account</Link>
-                </li>
-              </ul>
-            </div>
-          </ul>
-        </div> */}
+
       </div>
 
       <nav className="small-nav">
@@ -56,13 +41,6 @@ function Navbar(){
             </ul>
           </div>
         </ul>
-
-        <div >
-          <form className="d-flex" role="search">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-            <button className="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
       </div>
     </nav>
 
