@@ -7,7 +7,7 @@ function Navbar(){
   return(
     <>
      <div className="navbar-title">
-       <span>D{/* <img src="../logo.jpg"/> */}AM</span> 
+       <div className="span">D{/* <img src="../logo.jpg"/> */}<span>A</span>M</div> 
          <h5>Dial A Mechanic</h5>
       </div>
     <nav className="navbar header">
@@ -31,28 +31,8 @@ function Navbar(){
               <Link to="/mechanic/create-account"style={{color: "white"}}  className="nav-link ">Create Account</Link>
             </div>
           </li>
-
-          {/* <div className="container-fluid">
-        <ul className="navbar-nav">
-          <div className="dropdown">
-            <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="">
-              Are you a Mechanic ?
-            </button>
-            <ul className="dropdown-menu">          
-              <li className="nav-item">
-                {/* <Link to="/dam/login" className="nav-link">Login</Link> */}
-                {/* <Link to="/mechanic/create-account" className="nav-link">Create Account</Link>
-              </li>
-            </ul>
-          </div>
-        </ul>
-      </div> */} 
         </div>
       </nav>
-
-      <div className="container-fluid search-left">
-        
-      </div>
     </nav>
     </>
 

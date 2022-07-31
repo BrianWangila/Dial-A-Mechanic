@@ -41,7 +41,7 @@ function Footer (){
       </div>
 
     <center style={{fontSize: 15, paddingTop: 5+"vh", paddingBottom: 4}}>
-        <p>© 2022 | Copyright | Design by Brian Wangila</p>
+        <p>Designed by Brian Wangila | © 2022 | Copyright </p>
     </center>
     
   </nav>

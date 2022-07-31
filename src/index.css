@@ -6,9 +6,8 @@
 
 .flexbox {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: auto;
-  padding-left: 10vw;
   text-align: justify;
 
 }
@@ -73,7 +72,7 @@
 }
 
 .bg-footer button {
-  padding: 6px 12px 6px 12px;
+  padding: 1vh 2vw 1vh 2vw;
 }
 
 .header {
@@ -86,11 +85,6 @@
   background-size: contain;
 }
 
-.search-left {
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
 .login {
   border: 2px solid rgb(201, 196, 196);
   width: 30vw;
@@ -101,7 +95,7 @@
 .small-nav {
   background-color: #e0dcdc;
   border-radius: 10px 10px 0 0;
-  margin-top: 35vh;
+  margin-top: 50vh;
   /* width: 60vw; */
 }
 
@@ -112,7 +106,7 @@
   margin: 2vh;
 }
 
-.navbar-title span {
+.navbar-title .span {
   font-size: 8vh;
   font-family: fantasy;
   color: rgb(245, 54, 29);
@@ -122,13 +116,17 @@
   border-radius: 20px;
 }
 
+.navbar-title span {
+  color: #051752;
+}
+
 .navbar-title img {
   width: 5vw;
   height: 7vh;
 }
 
 .navbar-title h5 {
-  /* color: rgb(219, 39, 7); */
+  color: #051752;
   font-size: 3vh;
   font-weight: 500;
 }
@@ -136,7 +134,7 @@
 .f-span {
   font-size: 50px;
   font-family: fantasy;
-  color: rgb(12, 12, 204);
+  color: #092688;
   font-weight: 900;
   border: 3px solid rgb(26, 25, 25);
   border-radius: 20px;
@@ -165,7 +163,7 @@
 }
 
 .services h2{
-  color: rgb(9, 9, 145);
+  color: #051752;
   padding: 10px;
 
 }
