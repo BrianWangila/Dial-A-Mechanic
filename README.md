@@ -6,13 +6,20 @@
 # Description
 DAM is a single-page website that links motorist with car problems to their desired mechanics. The mechanics can be found all over the country, and in major cities and ready to help a stranded motorist get back on their journey. The site also offers mechanics an avenue to get clients and enhance their skills. The mechanics being situated all over the country make it easier for a motorist to get help as soon as they dial a number and explain their situation.
 
-# preview gif
+# Screenshot images
 
-        image.gif
+<img src="./public/assets/images/homepage.png"/>
+
+<img src="./public/assets/images/mechanicspage.png"/>
+
+<img src="./public/assets/images/login.png"/>
+
+<img src="./public/assets/images/fillform.png"/>
+
 
 
 # Features
-- Search component to search mechanics by city of category
+- Search component to search mechanics by city or category
 - an upload form for mechanics to add their profile and skills to the site
 - A way for the admin or mechanic to delete their specific profiles
 
@@ -21,6 +28,7 @@ DAM is a single-page website that links motorist with car problems to their desi
 
 ## Live Link
 - Click [Here](https://brianwangila.github.io/Dial-A-Mechanic/) to access the live link.
+- OR us [this link](https://dry-chamber-57688.herokuapp.com/) to access the website
 
 
 # Description
