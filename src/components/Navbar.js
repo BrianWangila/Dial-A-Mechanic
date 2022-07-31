@@ -6,9 +6,9 @@ function Navbar(){
 
   return(
     <>
-     <div className="navbar-title">
-       <div className="span">D{/* <img src="../logo.jpg"/> */}<span>A</span>M</div> 
-         <h5>Dial A Mechanic</h5>
+      <div className="navbar-title">
+          <div className="span">D{/* <img src="../logo.jpg"/> */}<span>A</span>M</div> 
+          <h5>Dial A Mechanic</h5>
       </div>
     <nav className="navbar header">
      
