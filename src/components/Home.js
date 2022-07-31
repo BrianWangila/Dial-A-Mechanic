@@ -53,7 +53,7 @@ export default function Home({Logout, user}){
   return (
     <center >
       <div>
-        <h3 className="home-title">Hello<span style={{color: "darkBlue", fontWeight: 600, fontSize: 40+"px"}}> {/*{user.name},*/} </span>Find A Mechanic in Seconds</h3>
+        <h3 className="home-title">{/*Hello<span style={{color: "darkBlue", fontWeight: 600, fontSize: 40+"px"}}> {user.name}, </span>*/}Find A Mechanic in Seconds</h3>
         <div className="search">
           {/* <button className="logout" onClick={Logout}>Logout</button> */}
           <form className="d-flex" role="search">

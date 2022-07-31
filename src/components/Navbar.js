@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 function Navbar(){
 
   return(
-    
-    <nav className="navbar header">
-      <div className="navbar-title">
-       {/* <span>DAM</span> 
-         <h5>Dial A Mechanic</h5> */}
+    <>
+     <div className="navbar-title">
+       <span>D{/* <img src="../logo.jpg"/> */}AM</span> 
+         <h5>Dial A Mechanic</h5>
       </div>
-
+    <nav className="navbar header">
+     
       <nav className="small-nav">
         <div className="nav nav-tabs">
-          <li className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+          <li className="nav-link active" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
             <Link to="/" className="nav-link" >Home</Link>
           </li>
           <li className="nav-link"  data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
@@ -26,9 +26,10 @@ function Navbar(){
           <li className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
             <Link to="/search" className="nav-link">Contact Us</Link>
           </li>
-          <li className="nav-link create-account" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
-                {/* <Link to="/dam/login" className="nav-link">Login</Link> */}
-                <Link to="/mechanic/create-account" className="nav-link">Create Account</Link>
+          <li className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+            <div className="create-account">
+              <Link to="/mechanic/create-account"style={{color: "white"}}  className="nav-link ">Create Account</Link>
+            </div>
           </li>
 
           {/* <div className="container-fluid">
@@ -53,6 +54,7 @@ function Navbar(){
         
       </div>
     </nav>
+    </>
 
   
   )

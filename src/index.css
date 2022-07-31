@@ -40,7 +40,7 @@
   height: 60vh;
   width: 80vw;
 }
-/* 
+
 .button {
   border: 1px solid rgb(177, 172, 172); 
   font-size: 10px;
@@ -49,7 +49,7 @@
   position: absolute;
   right: 5px;
   top: 5px;
-} */
+}
 
 .buttonDetails {
   margin-top: 2vh;
@@ -78,7 +78,7 @@
 
 .header {
   background-color: #beb8aa;
-  height: 60vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   background-image: url("https://www.ramonstireandservice.com/portals/42/Skins/master/img/img-welcome.jpg");
@@ -101,20 +101,19 @@
 .small-nav {
   background-color: #e0dcdc;
   border-radius: 10px 10px 0 0;
-  margin-bottom: -200px;
+  margin-top: 35vh;
+  /* width: 60vw; */
 }
 
 .navbar-title {
-  height: 6vh;
+  height: 10vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  margin: 2vh;
 }
 
 .navbar-title span {
   font-size: 8vh;
-  /* margin-top: -10px; */
   font-family: fantasy;
   color: rgb(245, 54, 29);
   font-weight: 900;
@@ -123,9 +122,14 @@
   border-radius: 20px;
 }
 
+.navbar-title img {
+  width: 5vw;
+  height: 7vh;
+}
+
 .navbar-title h5 {
   /* color: rgb(219, 39, 7); */
-  font-size: 10vh;
+  font-size: 3vh;
   font-weight: 500;
 }
 
@@ -197,4 +201,11 @@
 
 .error {
   color: red;
+}
+
+.create-account {
+  background-color: #051752;
+  border-radius: 10px 0;
+  color: black;
+  
 }

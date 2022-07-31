@@ -63,7 +63,7 @@ export default function Login({onLogin, error}){
           onChange={(e) => setDetails({...details, password: e.target.value})}/>
       </div>
  
-      {/* <Link to="/mechanic/create-account"><button type="submit" className="btn btn-primary">Login</button></Link> */}
+      {/* <Link to="/mechanic/create-account"><button type="submit" className="btn btn-primary">Logins</button></Link> */}
       <button type="submit" className="btn btn-primary">Login</button>
     </form>
     </center>

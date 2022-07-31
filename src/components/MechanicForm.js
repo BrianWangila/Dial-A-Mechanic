@@ -34,16 +34,16 @@ export default function MechanicForm({onHandleAddSubmit, onFillForm}){
   const Logins = (details) => {
     console.log(details)
 
-    if (details.email == adminUser.email && details.password == adminUser.password){
-      console.log("logged in")
+    // if (details.email == adminUser.email && details.password == adminUser.password){
+    //   console.log("logged in")
       setUser({
         name: details.name,
         email: details.email
       })
-    } else {
-      console.log("Details do not match")
-      setError("Wrong email or password")
-    }
+    // } else {
+    //   console.log("Details do not match")
+    //   setError("Wrong email or password")
+    // }
   }
 
   // const Logout = () => {
