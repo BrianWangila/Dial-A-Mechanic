@@ -45,7 +45,7 @@ export default function Home({Logout, user}){
   }
 
  if (!isLoaded){
-   return <center>Loading data, please wait...</center> 
+   return <center style={{marginTop: 3+"vh", color: "red"}}>Loading data, please wait...</center> 
 
   }
   else {

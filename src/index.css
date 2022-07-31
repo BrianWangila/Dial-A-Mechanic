@@ -23,8 +23,6 @@
 .aboutPage {
   display: flex;
   flex-direction: row;
-  width: 90vw;
-  padding: 2vw;
   margin: auto;
 }
 
@@ -161,6 +159,15 @@
   margin-top: 7vh;
   margin-bottom: 10vh;
   padding: 3vw;
+}
+
+.bg-about {
+  border: 1px solid rgb(173, 171, 171);
+  width: 90vw;
+  margin: auto;
+  padding: 2vw;
+  margin-top: 7vh;
+  margin-bottom: 10vh;
 }
 
 .services h2{
