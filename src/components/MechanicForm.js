@@ -83,7 +83,7 @@ export default function MechanicForm({onHandleAddSubmit, onFillForm}){
     .then((addedData) => onHandleAddSubmit(addedData))
     
     alert("Your details have been submitted. \n Go to Home page to view.")
-    // {<Link to="/" className="btn btn-primary">Join DAMs</Link>}
+
   }
   
 

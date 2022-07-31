@@ -104,6 +104,7 @@
   display: flex;
   align-items: center;
   margin: 2vh;
+  /* justify-content: space-between; */
 }
 
 .navbar-title .span {
@@ -207,3 +208,10 @@
   color: black;
   
 }
+/* 
+.estimate {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiQQH5c0HnR9JL3ZodME9su7tUAXtuG-2TDg&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backface-visibility: hidden;
+} */

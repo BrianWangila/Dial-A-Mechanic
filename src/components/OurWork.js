@@ -7,7 +7,7 @@ export default function OurWork(){
       <center style={{marginTop: 10+"vh"}}><h3>Our Services</h3></center>
       
       <div className="services">
-        <div style={{marginBottom: 5+"vh"}}>
+        <div className="estimate" style={{marginBottom: 5+"vh"}}>
         <h2><li>Automotive Repair Estimates</li></h2>
         <h4>Get cost-effective, quality auto repair from our certified experts</h4>
         <p>At Christian Brothers Automotive, our goal is to become your partner for all of your automotive care. Whether you’re visiting one of our nationwide locations for a simple oil change, or you come to us because you aren’t sure what’s wrong with your vehicle, our automotive technicians and service team members will be by your side throughout the life of your car or truck.</p>
@@ -20,6 +20,7 @@ export default function OurWork(){
 
         <p>Once we have an understanding of what is wrong with your vehicle, we don’t leave you in the dark. Our experienced service team members will thoroughly and transparently explain the entire situation to you–from problem to price–so that you understand our service recommendation(s). At Christian Brothers Automotive, we don’t seek out the quickest or cheapest solution. We will always recommend the most thorough and safe repair options, and not just a patch job for symptoms.</p>
         </div>
+
         <div>
           <h2><li>Oil And Filter Changes</li></h2>
           <h4>OIl changes near you</h4>
