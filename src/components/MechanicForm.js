@@ -40,7 +40,7 @@ export default function MechanicForm({onHandleAddSubmit, onFillForm}){
       })
     } else {
       console.log("Details do not match")
-      setError("One of the details is incorrect!")
+      setError("Wrong email or password")
     }
   }
 
@@ -176,7 +176,7 @@ export default function MechanicForm({onHandleAddSubmit, onFillForm}){
       </>
 
       ) : (
-         <Login Logins={Logins} error={error} />
+         <Login onLogin={Logins} error={error} />
       )}
    
    

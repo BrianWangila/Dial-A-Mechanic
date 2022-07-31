@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 
-export default function Login({Logins, error}){
+export default function Login({onLogin, error}){
 
   const [details, setDetails] = useState({
     name: "",
@@ -15,7 +15,7 @@ export default function Login({Logins, error}){
     e.preventDefault()
     // e.target.reset();
 
-    Logins(details)
+    onLogin(details)
 
     
   }
