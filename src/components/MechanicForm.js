@@ -1,3 +1,4 @@
+import { toBeChecked } from "@testing-library/jest-dom/dist/matchers";
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import Login from "./Login";
@@ -24,6 +25,7 @@ export default function MechanicForm({onHandleAddSubmit, onFillForm}){
     name: "",
     email: ""
   })
+
   const adminUser = {
     email: "admin@gmail.com",
     password: "admin123"
@@ -44,13 +46,13 @@ export default function MechanicForm({onHandleAddSubmit, onFillForm}){
     }
   }
 
-  const Logout = () => {
-    console.log("Logout")
-    setUser({
-      name: "",
-      email: ""
-    })
-  }
+  // const Logout = () => {
+  //   console.log("Logout")
+  //   setUser({
+  //     name: "",
+  //     email: ""
+  //   })
+  // }
 
   function handleSubmit(e){
     e.preventDefault()
@@ -80,8 +82,8 @@ export default function MechanicForm({onHandleAddSubmit, onFillForm}){
     .then((resp) => resp.json())
     .then((addedData) => onHandleAddSubmit(addedData))
     
-    // alert("Your details have been submitted. \n Go to Home page to view.")
-    {<Link to="/" className="btn btn-primary">Join DAMs</Link>}
+    alert("Your details have been submitted. \n Go to Home page to view.")
+    // {<Link to="/" className="btn btn-primary">Join DAMs</Link>}
   }
   
 
@@ -165,7 +167,8 @@ export default function MechanicForm({onHandleAddSubmit, onFillForm}){
         </div>
 
         <div className="mb-3 form-check">
-          <input type="checkbox" className="form-check-input" required/>
+          <input
+          type="checkbox" className="form-check-input" required/>
           <label className="form-check-label">Create account</label>
         </div>
 

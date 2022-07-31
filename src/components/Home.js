@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import MechanicsCard from "./MechanicsCard";
-import Login from "./Login";
 
 
 const DISPLAY_MECHANICS = "https://gentle-tundra-19961.herokuapp.com/mechanics"
@@ -12,7 +11,6 @@ export default function Home({Logout, user}){
   const [searchParam] = useState(["category", "location"])
   const [error, setError] = useState("")
 
-  
 
   useEffect(() => {
     fetch(DISPLAY_MECHANICS)
@@ -54,11 +52,10 @@ export default function Home({Logout, user}){
 
   return (
     <center >
-
       <div>
         <h3 className="home-title">Hello<span style={{color: "darkBlue", fontWeight: 600, fontSize: 40+"px"}}> {/*{user.name},*/} </span>Find A Mechanic in Seconds</h3>
         <div className="search">
-          <button className="logout" onClick={Logout}>Logout</button>
+          {/* <button className="logout" onClick={Logout}>Logout</button> */}
           <form className="d-flex" role="search">
             <input
               className="form-control me-2" 
