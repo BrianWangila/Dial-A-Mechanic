@@ -25,7 +25,7 @@ export default function AboutUs(){
           <img src="https://newsroom.aaa.com/wp-content/uploads/2012/12/AAA-Experts-Made-the-List-Now-Check-it-Twice-to-Avoid-Being-One-of-the-1.2-Million-Motorists-Stranded-this-Holiday-Season.jpg"/>
         </div>
 
-        <div className="aboutPage">
+        <div className="aboutPage" style={{marginTop: 8+"vh"}}>
           <img src="https://media.wired.com/photos/6164aa3d5977b55191ff4917/master/pass/Business-P90390184_highRes.jpg"/>
           <div className="card" style={{width: 48+"vw", background: "#e0dcdc"}}>
               <div className="card-body">
