@@ -28,7 +28,7 @@ function Navbar(){
           </li>
           <li className="nav-link" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
             <div className="create-account">
-              <Link to="/mechanic/create-account"style={{color: "white"}}  className="nav-link ">Create Account</Link>
+              <Link to="/mechanic/create-account"style={{color: "white"}}  className="nav-link ">Enroll as a Mechanic</Link>
             </div>
           </li>
         </div>

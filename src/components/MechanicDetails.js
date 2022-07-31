@@ -14,6 +14,7 @@ export default function MechanicDetails(){
   const [about, setAbout] = useState("")
   const [experience, setExperience] = useState("")
   const [rating, setRating] = useState("")
+  const [category, setCategory] = useState("")
 
   let {mechId} = useParams()
   const actualSearch = DISPLAY_MECHANICS + mechId
@@ -32,6 +33,7 @@ export default function MechanicDetails(){
       setEmail(mechanic.email)
       setName(mechanic.name)
       setNumber(mechanic.phone)
+      setCategory(mechanic.category)
 
     })
   }, []) 
@@ -39,11 +41,12 @@ export default function MechanicDetails(){
   return(
     <div>
       <center className="container" style={{marginTop: 10+"vh", marginBottom: 10+"vh"}}>
-        <h2>{shopName}</h2>
+        <h2 className="shop-name">{shopName}</h2>
         <div className="card" style={{width: 40+"rem"}}>
           <img src={image} className="card-img-top" alt={name}/>
           <div className="card-body">
             <h5 className="card-title">{name}</h5>
+            <span className="badge text-bg-danger">{category}</span>
           <p className="card-text" style={{minHeight: 35+"vh"}}>{about}</p>
           </div>
           <ul className="list-group list-group-flush text-bg-info">

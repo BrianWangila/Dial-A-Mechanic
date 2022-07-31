@@ -18,6 +18,7 @@ function App() {
     <Router>
       <div>
         <Navbar />
+        {/* <Home/> */}
 
       </div>
 

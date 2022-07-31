@@ -29,6 +29,7 @@ export default function MechanicsCard({category, image, name, shopName, location
           <div>
             <li>Experience: {experience} years</li> <li>Rating: <span>{rating}</span> / 5</li>
           </div>
+          
           <div>
             <Link to={`/mechanic/${mechId}`} className=" buttonDetails btn btn-primary">More Details</Link>
           </div>
