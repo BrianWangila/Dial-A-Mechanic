@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
+import Login from "./Login";
 
 
 
@@ -18,6 +19,38 @@ export default function MechanicForm({onHandleAddSubmit, onFillForm}){
   const [experience, setExperience] = useState("")
   const [rating, setRating] = useState("")
   const [location, setLocation] = useState("")
+  const [error, setError] = useState("")
+  const [user, setUser] = useState({
+    name: "",
+    email: ""
+  })
+  const adminUser = {
+    email: "admin@gmail.com",
+    password: "admin123"
+  }
+
+  const Logins = (details) => {
+    console.log(details)
+
+    if (details.email == adminUser.email && details.password == adminUser.password){
+      console.log("logged in")
+      setUser({
+        name: details.name,
+        email: details.email
+      })
+    } else {
+      console.log("Details do not match")
+      setError("One of the details is incorrect!")
+    }
+  }
+
+  const Logout = () => {
+    console.log("Logout")
+    setUser({
+      name: "",
+      email: ""
+    })
+  }
 
   function handleSubmit(e){
     e.preventDefault()
@@ -54,6 +87,8 @@ export default function MechanicForm({onHandleAddSubmit, onFillForm}){
 
   return(
     <div>
+      {(user.email != "") ? (
+      <>
       <center style={{padding: 5+"vh"}}><h3>Thank you for joining <span>DAM</span> in the quest <br></br> to serve our clients better</h3></center>
       <form className="login" style={{width: 50+"vw", margin:"auto", marginTop: 20+"px"}} onSubmit={handleSubmit}  >
         <h6>Kindly, provide accurate information</h6>
@@ -138,6 +173,12 @@ export default function MechanicForm({onHandleAddSubmit, onFillForm}){
         <button type="submit" className="btn btn-primary">Join DAM</button> 
         
       </form>
+      </>
+
+      ) : (
+         <Login Logins={Logins} error={error} />
+      )}
+   
    
     </div>
   )

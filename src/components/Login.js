@@ -27,7 +27,9 @@ export default function Login({Logins, error}){
     </div>
     <form className="login" onSubmit={handleSubmit}>
       <div className="mb-6">
-        {/* ERROR */}
+        {/* display our error message here */}
+        {(error !== "") ? (<div className="error">{error}</div>) : ""}
+
         <label className="form-label">First and Last Name</label>
         <input
           type="text"

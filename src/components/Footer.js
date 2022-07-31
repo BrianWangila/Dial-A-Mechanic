@@ -31,10 +31,10 @@ function Footer (){
           <h6>Subscribe to our weekly newsletter</h6>
         <form className="form-bg">
           <div className="">
-            <input type="email" class="form" placeholder="Type your Email Address"/>
+            <input type="email" className="form" placeholder="Type your Email Address"/>
           </div>
-          <div class="footer-submit">
-            <button type="submit" class="btn btn-info">Submit</button>
+          <div className="footer-submit">
+            <button type="submit" className="btn btn-info">Submit</button>
           </div>
         </form>
         </div>

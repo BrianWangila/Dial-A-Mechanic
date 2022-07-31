@@ -21,7 +21,7 @@ export default function MechanicsCard({category, image, name, shopName, location
       <div className="card text-bg-light" style={{width: 40 +"vw"}}>
         <img src={image} className="card-img" alt={name}/>
         <div className="card-body">
-          <button onClick={handleDelete} type="button" class="button btn btn-light">x</button>
+          <button onClick={handleDelete} type="button" className="button btn btn-light">x</button>
           <h3 className="card-title">{shopName}</h3>
           <span className="badge text-bg-danger">{category}</span>
           <h5 className="card-text">{location}</h5>

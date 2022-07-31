@@ -82,6 +82,7 @@
   display: flex;
   flex-direction: column;
   background-image: url("https://www.ramonstireandservice.com/portals/42/Skins/master/img/img-welcome.jpg");
+
   background-size: contain;
 }
 
@@ -123,7 +124,7 @@
 }
 
 .navbar-title h5 {
-  color: rgb(219, 39, 7);
+  /* color: rgb(219, 39, 7); */
   font-size: 10vh;
   font-weight: 500;
 }
@@ -192,4 +193,8 @@
 
 .subscribe {
   margin-right: 3vw;
+}
+
+.error {
+  color: red;
 }

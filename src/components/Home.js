@@ -4,43 +4,15 @@ import Login from "./Login";
 
 
 const DISPLAY_MECHANICS = "https://gentle-tundra-19961.herokuapp.com/mechanics"
-export default function Home(){
+export default function Home({Logout, user}){
 
   const [isLoaded, setIsLoaded] = useState(false)
   const [mechDetails, setMechDetails] = useState([])
   const [search, setSearch] = useState("")
   const [searchParam] = useState(["category", "location"])
   const [error, setError] = useState("")
-  const [user, setUser] = useState({
-    name: "",
-    email: ""
-  })
-  const adminUser = {
-    email: "admin@gmail.com",
-    password: "admin123"
-  }
 
-  const Logins = (details) => {
-    console.log(details)
-
-    // if (details.email == adminUser.email && details.password == adminUser.password){
-    //   console.log("logged in")
-      setUser({
-        name: details.name,
-        email: details.email
-      })
-    // } else {
-    //   console.log("Details do not match")
-    // }
-  }
-
-  const Logout = () => {
-    console.log("Logout")
-    setUser({
-      name: "",
-      email: ""
-    })
-  }
+  
 
   useEffect(() => {
     fetch(DISPLAY_MECHANICS)
@@ -82,9 +54,9 @@ export default function Home(){
 
   return (
     <center >
-      {(user.email != "") ? (
+
       <div>
-        <h3 className="home-title">Hello<span style={{color: "darkBlue", fontWeight: 600, fontSize: 40+"px"}}> {user.name}, </span>Find A Mechanic in Seconds</h3>
+        <h3 className="home-title">Hello<span style={{color: "darkBlue", fontWeight: 600, fontSize: 40+"px"}}> {/*{user.name},*/} </span>Find A Mechanic in Seconds</h3>
         <div className="search">
           <button className="logout" onClick={Logout}>Logout</button>
           <form className="d-flex" role="search">
@@ -118,11 +90,7 @@ export default function Home(){
           })}
         </div>
       </div>
-      ) : (
-      <Login Logins={Logins} error={error} />
-      )}
- 
-
+      
     </center>
   )
 }
