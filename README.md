@@ -30,6 +30,9 @@ DAM is a single-page website that links motorist with car problems to their desi
 - Click [Here](https://brianwangila.github.io/Dial-A-Mechanic/) to access the live link.
 - OR us [this link](https://dry-chamber-57688.herokuapp.com/) to access the website
 
+## Dial A Mechanic API Repo
+
+- [DAM Repo Link](https://github.com/BrianWangila/Dial-A-Mechanic-API)
 
 # Description
 Let us get a deep dive into how to configure routing in REACT.
